@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Clone - Order Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/kfc logo.png" alt="KFC Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="order.html">Order Online</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Order Online</h1>
+        <p>Choose your favorites and place your order below!</p>
+        <form id="order-form">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="phone">Your Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+            <label for="address">Delivery Address:</label><br>
+            <textarea id="address" name="address" placeholder="Enter your delivery address" required></textarea><br><br>
+
+            <label for="order">Your Order:</label><br>
+            <textarea id="order" name="order" placeholder="E.g., 1 Chicken Bucket, 2 Burgers" required></textarea><br><br>
+
+            <label for="payment-method">Payment Method:</label><br>
+            <select id="payment-method" name="payment-method" required>
+                <option value="cash">Cash on Delivery</option>
+                <option value="card">Credit/Debit Card</option>
+            </select><br><br>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 KFC Clone. All Rights Reserved.</p>
+    </footer>
+    <script src="js/order.js"></script>
+</body>
+</html>
